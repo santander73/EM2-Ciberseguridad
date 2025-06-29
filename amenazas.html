@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenazas Comunes en Ciberseguridad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ciberseguridad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="amenazas.html">Amenazas Comunes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="consejos.html">Consejos de Seguridad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5">Conoce las Amenazas Cibernéticas Más Comunes</h1>
+
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/phishing.png" class="card-img-top" alt="Phishing">
+                    <div class="card-body">
+                        <h5 class="card-title">Phishing</h5>
+                        <p class="card-text">Intentos de engañar a las personas para que revelen información
+                            confidencial (contraseñas, datos bancarios) a través de correos electrónicos, mensajes o
+                            sitios web falsos que simulan ser legítimos.</p>
+                        <button class="btn btn-info btn-sm show-more-info" data-target="#phishingInfo">Ver Más</button>
+                        <div id="phishingInfo" class="more-info mt-3" style="display: none;">
+                            <p><strong>Ejemplo:</strong> Un correo electrónico que parece ser de tu banco solicitando
+                                que hagas clic en un enlace para "verificar tu cuenta" debido a una supuesta actividad
+                                sospechosa.</p>
+                            <p><strong>Prevención:</strong> Siempre verifica la dirección del remitente, evita hacer
+                                clic en enlaces sospechosos y no descargues archivos adjuntos de correos electrónicos no
+                                solicitados. Reporta correos de phishing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/Ransomware.png" class="card-img-top" alt="Ransomware">
+                    <div class="card-body">
+                        <h5 class="card-title">Ransomware</h5>
+                        <p class="card-text">Software malicioso que cifra los archivos de un usuario o sistema y exige
+                            un rescate (generalmente en criptomonedas) a cambio de la clave de descifrado.</p>
+                        <button class="btn btn-info btn-sm show-more-info" data-target="#ransomwareInfo">Ver
+                            Más</button>
+                        <div id="ransomwareInfo" class="more-info mt-3" style="display: none;">
+                            <p><strong>Ejemplo:</strong> WannaCry, un ataque global en 2017 que afectó a cientos de
+                                miles de computadoras al cifrar sus archivos y exigir un rescate en Bitcoin.</p>
+                            <p><strong>Prevención:</strong> Realiza copias de seguridad de tus archivos regularmente,
+                                mantén tu software actualizado y utiliza un buen antivirus. Desconfía de archivos
+                                adjuntos y enlaces desconocidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/Malware.jpg" class="card-img-top" alt="Malware">
+                    <div class="card-body">
+                        <h5 class="card-title">Malware</h5>
+                        <p class="card-text">Término general para software malicioso que incluye virus, troyanos,
+                            spyware, adware, etc., diseñado para dañar, robar datos o controlar sistemas informáticos.
+                        </p>
+                        <button class="btn btn-info btn-sm show-more-info" data-target="#malwareInfo">Ver Más</button>
+                        <div id="malwareInfo" class="more-info mt-3" style="display: none;">
+                            <p><strong>Ejemplo:</strong> Un troyano que se disfraza de una aplicación legítima para
+                                obtener acceso a tu sistema y robar tus credenciales o información personal.</p>
+                            <p><strong>Prevención:</strong> Usa un software antivirus y antimalware, descarga
+                                aplicaciones solo de fuentes confiables, ten cuidado con las descargas de sitios web
+                                desconocidos y mantén tu sistema operativo actualizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="img/AtaquesDDoS.jpg" class="card-img-top" alt="AtaquesDDoS">
+                    <div class="card-body">
+                        <h5 class="card-title">Ataques DDoS (Denegación de Servicio Distribuida)</h5>
+                        <p class="card-text">Intentos de abrumar un servidor, servicio o red con una gran cantidad de
+                            tráfico de internet, con el objetivo de interrumpir el servicio y dejarlo inaccesible para
+                            los usuarios legítimos.</p>
+                        <button class="btn btn-info btn-sm show-more-info" data-target="#ddosInfo">Ver Más</button>
+                        <div id="ddosInfo" class="more-info mt-3" style="display: none;">
+                            <p><strong>Ejemplo:</strong> Un grupo de hackers que utiliza una red de computadoras
+                                "zombies" (botnet) para enviar millones de solicitudes a un sitio web, haciendo que
+                                colapse.</p>
+                            <p><strong>Prevención:</strong> Las empresas utilizan servicios de mitigación de DDoS y
+                                firewalls. Como usuario, es menos probable que seas el objetivo directo, pero estar
+                                informado ayuda a entender por qué ciertos sitios pueden estar caídos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr class="my-5">
+
+        <h2 class="text-center mb-4">Casos Reales y Ejemplos</h2>
+        <div id="carouselAmenazas" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselAmenazas" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Phishing"></button>
+                <button type="button" data-bs-target="#carouselAmenazas" data-bs-slide-to="1"
+                    aria-label="Ransomware"></button>
+                <button type="button" data-bs-target="#carouselAmenazas" data-bs-slide-to="2"
+                    aria-label="Malware"></button>
+                <button type="button" data-bs-target="#carouselAmenazas" data-bs-slide-to="3"
+                    aria-label="DDoS"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/twitter_00.jpg" class="d-block w-100" alt="Phishing">
+                    <div class="carousel-caption d-none d-md-block bg-dark p-3 rounded">
+                        <h5>Fraude de Phishing en Twitter (2020)</h5>
+                        <p>Varias cuentas verificadas de Twitter, incluyendo las de Elon Musk, Bill Gates y Joe Biden,
+                            fueron comprometidas a través de un ataque de ingeniería social (phishing) dirigido a
+                            empleados de Twitter, que llevó a la publicación de un esquema de estafa de Bitcoin.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/pipeline.jpg" class="d-block w-100" alt="Ransomware">
+                    <div class="carousel-caption d-none d-md-block bg-dark p-3 rounded">
+                        <h5>Ataque a Colonial Pipeline (Ransomware)</h5>
+                        <p>En mayo de 2021, el mayor oleoducto de combustible de EE. UU. fue atacado por ransomware, lo
+                            que interrumpió el suministro de combustible en la costa este y generó pánico. Los
+                            operadores pagaron un rescate millonario para recuperar el control.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/malware2.jpg" class="d-block w-100" alt="Malware">
+                    <div class="carousel-caption d-none d-md-block bg-dark p-3 rounded">
+                        <h5>El Creeper virus</h5>
+                        <p>El Creeper virus, reconocido como el primer virus informático documentado, marcó un hito
+                            significativo en la historia de la computación. Desarrollado en 1971 por Bob Thomas, 
+                            un programador de BBN Technologies,este programa experimental fue diseñado como un software autorreplicante</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/DDOS.jpg" class="d-block w-100" alt="DDoS">
+                    <div class="carousel-caption d-none d-md-block bg-dark p-3 rounded">
+                        <h5>Mirai Botnet (DDoS)</h5>
+                        <p>En 2016, la botnet Mirai lanzó ataques DDoS masivos que derribaron importantes sitios web y
+                            servicios de Internet, utilizando dispositivos IoT (cámaras, routers) infectados con
+                            malware.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselAmenazas" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselAmenazas" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p>&copy; 2025 Ciberseguridad. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
